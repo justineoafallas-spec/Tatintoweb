@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Aesthetic Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<!-- Social Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins', sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(135deg,#1d2b64,#f8cdda);
+color:white;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+position:fixed;
+width:100%;
+top:0;
+background:rgba(0,0,0,0.25);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+nav h1{
+font-size:24px;
+letter-spacing:2px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:30px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-weight:500;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:#ffd369;
+}
+
+/* SECTIONS */
+
+section{
+min-height:100vh;
+padding:120px 10%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+/* HOME */
+
+.home img{
+width:160px;
+border-radius:50%;
+margin-bottom:20px;
+border:4px solid white;
+box-shadow:0 0 20px rgba(255,255,255,0.5);
+}
+
+.home h2{
+font-size:48px;
+margin-bottom:10px;
+}
+
+.home p{
+opacity:0.9;
+}
+
+/* ABOUT */
+
+.about-box{
+background:rgba(255,255,255,0.1);
+padding:40px;
+border-radius:20px;
+backdrop-filter:blur(15px);
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+max-width:700px;
+}
+
+/* GALLERY */
+
+.gallery-grid{
+margin-top:30px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+width:100%;
+}
+
+.gallery-grid img{
+width:100%;
+border-radius:15px;
+transition:0.4s;
+box-shadow:0 5px 20px rgba(0,0,0,0.3);
+}
+
+.gallery-grid img:hover{
+transform:scale(1.08) rotate(1deg);
+}
+
+/* CONTACT */
+
+.contact-box{
+background:rgba(255,255,255,0.1);
+padding:40px;
+border-radius:20px;
+max-width:500px;
+backdrop-filter:blur(15px);
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+.social-links{
+display:flex;
+justify-content:center;
+gap:50px;
+margin-top:25px;
+}
+
+.social-links a{
+text-decoration:none;
+color:white;
+text-align:center;
+transition:0.3s;
+}
+
+.social-links i{
+font-size:45px;
+margin-bottom:10px;
+}
+
+.social-links a:hover{
+color:#ffd369;
+transform:scale(1.15);
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:rgba(0,0,0,0.3);
+}
+
+/* ANIMATION */
+
+.fade{
+animation:fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<h1>My Portfolio</h1>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- HOME -->
+
+<section id="home" class="home fade">
+
+<img src="image1.web" alt="profile">
+
+<h2>Hello, I'm Justine</h2>
+<p>A student passionate about creativity, technology, and design.</p>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<div class="about-box fade">
+
+<h2>About Me</h2>
+
+<p>
+Hello! I am a student who enjoys exploring technology and creating
+designs. I love learning new things, improving my skills, and building
+projects that showcase my creativity.
+</p>
+
+</div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section id="gallery">
+
+<h2>Gallery</h2>
+
+<div class="gallery-grid fade">
+
+<img src="image1.web">
+<img src="image2.web">
+<img src="image3.web">
+<img src="image4.web">
+
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<div class="contact-box fade">
+
+<h2>Contact Me</h2>
+
+<div class="social-links">
+
+<a href="https://www.facebook.com/share/17vzQgshve/" target="_blank">
+<i class="fab fa-facebook"></i>
+<p>Facebook</p>
+</a>
+
+<a href="https://www.instagram.com/justineoafallas?igsh=MTUzYnBoeXd1OWVsOA==" target="_blank">
+<i class="fab fa-instagram"></i>
+<p>Instagram</p>
+</a>
+
+<a href="mailto:justineoafallas@gmail.com">
+<i class="fas fa-envelope"></i>
+<p>Email</p>
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 My Portfolio | School Project</p>
+</footer>
+
+</body>
+</html>
